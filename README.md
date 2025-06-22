@@ -30,3 +30,26 @@ An AI-powered chat application with session history, auto-title generation, dark
 cd frontend
 npm install
 npm start
+```
+
+### Backend Setup
+```bash
+Copy
+Edit
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+### 🧩 Tech Stack
+- React
+
+- FastAPI
+
+- LLaMA / Open Source LLM APIs
+
+- Tailwind (optional for styling)
+
+- React Markdown
+
+### 🧠 How it Works
+- Each user interaction is saved under a unique session. Sessions are auto-titled using the first user query. You can rename or delete them anytime.
