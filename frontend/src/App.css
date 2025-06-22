@@ -1,0 +1,159 @@
+.App {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #f5f5f5;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar input {
+  margin-bottom: 12px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sidebar button {
+  margin-bottom: 12px;
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  flex: 1;
+  overflow-y: auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  background-color: #cfe2ff;
+}
+
+.sidebar li input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+}
+
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  position: relative;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.input-box {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+
+.input-box button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.user, .assistant {
+  margin-bottom: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.user {
+  background-color: #e6f7ff;
+  align-self: flex-end;
+}
+
+.assistant {
+  background-color: #fff0f5;
+  align-self: flex-start;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark .sidebar {
+  background-color: #2c2c2c;
+}
+
+.dark .chat-window {
+  background-color: #1e1e1e;
+}
+
+.dark .chat-box {
+  background-color: #1e1e1e;
+}
+
+.dark .input-box {
+  background-color: #2c2c2c;
+  border-top: 1px solid #555;
+}
+
+.dark .input-box input {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+.dark .sidebar button,
+.dark .input-box button {
+  background-color: #007bff;
+  color: white;
+}
